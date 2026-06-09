@@ -1172,7 +1172,9 @@ Expert in Mehandi, Aari, Beads & All Thread Works for Every Occasion
 
 <section class="services">
 <h2 class="section-title" data-i18n="servicesTitle">Our Services</h2>
-<p class="scroll-hint" id="scrollHint">Swipe to Explore.</p>
+<p class="scroll-hint" id="scrollHint">
+✨ Swipe to Explore Services ✨
+</p>
 <div class="service-wrapper">
 <div class="service-grid" id="serviceGrid">
 
@@ -1348,6 +1350,7 @@ const textData = {
     "bridalTag": "💍 Wedding Special",
     "bridalTitle": "BRIDAL MEHANDI",
     "bridalText": "Full Hand • Bridal Style • Rich Detailing",
+    "scrollHint": "✨ Swipe to Explore Services ✨",
     "bridalF1": "✦ Royal",
     "bridalF2": "♡ Bridal",
     "bridalF3": "✧ Grand",
@@ -1435,6 +1438,7 @@ const textData = {
     "bridalTag": "💍 வெட்டிங் ஸ்பெஷல்",
     "bridalTitle": "பிரைடல் மெஹந்தி",
     "bridalText": "ஃபுல் ஹேண்ட் • பிரைடல் ஸ்டைல் • ரிச் டீட்டெய்லிங்",
+    "scrollHint": "✨ சேவைகளை அறிய ஸ்வைப் செய்யவும் ✨",
     "bridalF1": "✦ ராயல்",
     "bridalF2": "♡ பிரைடல்",
     "bridalF3": "✧ கிராண்ட்",
@@ -1470,6 +1474,8 @@ function applyLanguage(lang){
 function setLanguage(lang){
   document.getElementById("languagePopup").style.display = "none";
   applyLanguage(lang);
+  document.getElementById("scrollHint").innerText =
+textData[lang].scrollHint;
 }
 
 window.addEventListener("load", function(){
