@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Buttu's Creation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#120313;
+font-family:'Poppins',sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+:root{
+--gold:#d8a84f;
+--lightGold:#f8dda2;
+--cream:#fff8ef;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+padding:25px 7%;
+background:
+linear-gradient(90deg,
+rgba(14,0,20,.65) 0%,
+rgba(25,0,18,.35) 45%,
+rgba(14,0,20,.45) 100%),
+url('hero-bg.jpg');
+
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:flex-end;
+align-items:center;
+position:relative;
+padding-top:10px;
+}
+
+.logo-section{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:100px;
+height:100px;
+border-radius:50%;
+border:2px solid var(--gold);
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+background:#140416;
+box-shadow:0 0 25px rgba(216,168,79,.35);
+}
+
+.logo img{
+width:110%;
+height:110%;
+object-fit:cover;
+border-radius:50%;
+display:block;
+}
+
+.brand h1{
+font-size:38px;
+font-family:'Playfair Display',serif;
+color:var(--lightGold);
+line-height:1;
+}
+
+.brand p{
+font-size:11px;
+letter-spacing:2px;
+margin-top:5px;
+color:#e8d2aa;
+}
+
+.contact-btn{
+padding:12px 22px;
+border:1px solid var(--gold);
+border-radius:10px;
+display:flex;
+align-items:center;
+gap:10px;
+color:#ffe8bc;
+transition:.3s;
+font-size:13px;
+background:rgba(255,255,255,.03);
+backdrop-filter:blur(8px);
+}
+
+.contact-btn:hover{
+background:var(--gold);
+color:#1d0515;
+transform:translateY(-2px);
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+margin-top:120px;
+max-width:620px;
+}
+
+.hero-content h2{
+font-size:70px;
+line-height:1.12;
+font-family:'Playfair Display',serif;
+color:#fff4e2;
+}
+
+.script{
+display:block;
+font-family:'Great Vibes',cursive;
+font-size:82px;
+color:var(--gold);
+font-weight:400;
+margin-top:8px;
+}
+
+.hero-content p{
+margin-top:30px;
+font-size:21px;
+line-height:1.7;
+max-width:580px;
+color:#f2dec0;
+}
+
+.hero-features{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+margin-top:35px;
+}
+
+.hero-feature{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+color:#f3deb7;
+}
+
+.hero-feature i{
+color:var(--gold);
+}
+
+.main-btn{
+margin-top:40px;
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:16px 36px;
+border-radius:12px;
+background:linear-gradient(135deg,#efc46c,#9a6926);
+color:#250714;
+font-weight:600;
+box-shadow:0 0 20px rgba(216,168,79,.45);
+transition:.3s;
+}
+
+.main-btn:hover{
+transform:translateY(-4px);
+}
+
+/* WHAT WE CREATE */
+.create-section{
+padding:70px 5% 85px;
+background:
+linear-gradient(rgba(16,0,18,.78),rgba(16,0,18,.82)),
+url('hero-bg.jpg');
+background-size:cover;
+background-position:center;
+text-align:center;
+overflow:hidden;
+}
+
+.create-title{
+font-family:'Playfair Display',serif;
+font-size:50px;
+font-weight:500;
+color:#f6d89b;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:22px;
+margin-bottom:8px;
+}
+
+.create-title .line{
+width:70px;
+height:2px;
+background:#c7943d;
+display:inline-block;
+}
+
+.create-title-text{
+width:auto !important;
+height:auto !important;
+background:none !important;
+display:inline !important;
+}
+
+.title-heart{
+color:#e0b653;
+font-size:24px;
+margin-bottom:45px;
+}
+
+.create-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:35px;
+}
+
+.create-item{
+text-align:center;
+position:relative;
+}
+
+.icon-circle{
+width:150px;
+height:150px;
+border:1.5px solid #c7943d;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 24px;
+font-size:58px;
+color:#e0b653;
+position:relative;
+filter:sepia(1) saturate(2);
+}
+
+.icon-circle::before,
+.icon-circle::after{
+content:"✦";
+position:absolute;
+top:-12px;
+font-size:17px;
+color:#d8a84f;
+}
+
+.icon-circle::before{
+left:18px;
+}
+
+.icon-circle::after{
+right:18px;
+}
+
+.create-item h3{
+font-family:'Playfair Display',serif;
+font-size:24px;
+line-height:1.18;
+color:#f3c96d;
+margin-bottom:20px;
+}
+
+.create-item p{
+font-size:17px;
+line-height:1.7;
+color:#fff3df;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:1100px){
+.create-grid{
+grid-template-columns:repeat(3,1fr);
+}
+}
+
+@media(max-width:650px){
+.create-grid{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.create-title{
+font-size:34px;
+}
+
+.create-title .line{
+width:35px;
+}
+
+.icon-circle{
+width:120px;
+height:120px;
+font-size:45px;
+}
+
+.create-item h3{
+font-size:20px;
+}
+
+.create-item p{
+font-size:14px;
+}
+}
+
+/* FEATURES */
+
+.feature-box{
+margin:55px 7%;
+padding:35px;
+border:1px solid var(--gold);
+border-radius:30px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+background:rgba(255,255,255,.02);
+}
+
+.feature{
+text-align:center;
+padding:10px;
+border-right:1px solid rgba(216,168,79,.25);
+}
+
+.feature:last-child{
+border-right:none;
+}
+
+.feature i{
+font-size:34px;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.feature h4{
+font-size:22px;
+font-family:'Playfair Display',serif;
+color:#ffe3a3;
+margin-bottom:10px;
+}
+
+.feature p{
+font-size:13px;
+line-height:1.6;
+color:#ead7bc;
+}
+
+/* TRUST BAR */
+
+.trust{
+background:var(--cream);
+padding:18px 7%;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+color:#2b0a1b;
+}
+
+.trust div{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+font-size:14px;
+font-weight:600;
+}
+
+.trust i{
+color:#b88635;
+font-size:22px;
+}
+
+
+/* SERVICES */
+/* SERVICES */
+
+.services{
+padding:80px 0;
+background:linear-gradient(135deg,#fff8ef,#f3e4cc);
+overflow:hidden;
+}
+
+.services .section-title{
+font-family:'Playfair Display',serif;
+font-size:50px;
+text-align:center;
+color:#250014;
+margin-bottom:45px;
+}
+
+.services .section-title::before,
+.services .section-title::after{
+content:"✦";
+color:var(--gold);
+font-size:22px;
+margin:0 18px;
+}
+
+.service-wrapper{
+overflow-x:auto;
+scroll-behavior:smooth;
+position:relative;
+width:100%;
+padding:20px 0 60px;
+}
+
+.service-grid{
+display:flex;
+gap:34px;
+width:max-content;
+padding:0 60px;
+overflow-x:auto;
+}
+
+.service-card{
+min-width:380px;
+max-width:380px;
+flex-shrink:0;
+cursor:pointer;
+border:1.5px solid rgba(216,168,79,.8);
+border-radius:24px;
+overflow:hidden;
+background:#260016;
+box-shadow:0 18px 40px rgba(45,0,30,.22);
+transition:.35s ease;
+}
+
+.service-card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 25px 55px rgba(45,0,30,.32);
+}
+
+.service-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+display:block;
+}
+
+.service-content{
+padding:24px 18px 28px;
+text-align:center;
+background:linear-gradient(160deg,#2b0018,#430026,#1b0010);
+min-height:260px;
+}
+
+.mini-tag{
+display:inline-block;
+padding:6px 14px;
+border-radius:30px;
+background:rgba(255,215,140,.12);
+border:1px solid rgba(255,215,140,.35);
+color:#f7d58a;
+font-size:12px;
+letter-spacing:.5px;
+margin-bottom:14px;
+}
+
+.service-content h3{
+font-family:'Playfair Display',serif;
+font-size:23px;
+line-height:1.2;
+color:#ffd98a;
+margin-bottom:12px;
+text-transform:uppercase;
+}
+
+.highlight-text{
+font-size:16px;
+font-weight:500;
+line-height:1.6;
+color:#fff6df;
+margin-bottom:16px;
+}
+
+.service-features{
+display:flex;
+justify-content:center;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.service-features span{
+font-size:12px;
+padding:6px 10px;
+border-radius:20px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,215,140,.18);
+color:#f6d596;
+}
+
+
+
+@media(max-width:650px){
+.services .section-title{
+font-size:36px;
+}
+
+.service-card{
+min-width:310px;
+max-width:310px;
+}
+
+.service-card img{
+height:220px;
+}
+
+.service-content{
+min-height:220px;
+}
+}
+
+.scroll-hint{
+text-align:center;
+font-size:14px;
+color:#8b5a22;
+letter-spacing:.6px;
+margin-top:-30px;
+margin-bottom:25px;
+font-weight:500;
+}
+
+.scroll-hint::before{
+content:"✦ ";
+color:var(--gold);
+}
+
+.scroll-hint::after{
+content:" ✦";
+color:var(--gold);
+}
+
+@media(max-width:650px){
+.scroll-hint{
+font-size:12px;
+}
+}
+
+@media(max-width:650px){
+
+.service-grid{
+animation:none;
+overflow-x:auto;
+scroll-snap-type:x mandatory;
+-webkit-overflow-scrolling:touch;
+padding:0 20px 35px;
+}
+
+.service-card{
+scroll-snap-align:center;
+min-width:85vw;
+max-width:85vw;
+}
+
+.service-wrapper{
+overflow-x:auto;
+padding:10px 0 45px;
+}
+
+
+.service-grid::-webkit-scrollbar{
+height:6px;
+}
+
+.service-grid::-webkit-scrollbar-track{
+background:rgba(216,168,79,.18);
+border-radius:20px;
+}
+
+.service-grid::-webkit-scrollbar-thumb{
+background:linear-gradient(90deg,#d8a84f,#9a6926);
+border-radius:20px;
+}
+
+.scroll-hint{
+font-size:12px;
+margin-top:-20px;
+}
+
+}
+
+/* FOOTER */
+
+.footer{
+padding:40px 7%;
+background:#220514;
+text-align:center;
+}
+
+.footer h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+color:var(--lightGold);
+margin-bottom:20px;
+}
+
+.footer p{
+color:#e5d3b6;
+margin-bottom:25px;
+font-size:15px;
+}
+
+.footer-btn{
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:14px 35px;
+border-radius:30px;
+background:linear-gradient(135deg,#e0b35f,#9a6926);
+color:#220514;
+font-weight:600;
+transition:.3s;
+}
+
+.footer-btn:hover{
+transform:translateY(-3px);
+}
+
+.footer-bottom{
+margin-top:40px;
+font-size:13px;
+color:#c7b293;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.create-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-content h2{
+font-size:46px;
+}
+
+.script{
+font-size:58px;
+}
+
+.feature-box{
+grid-template-columns:repeat(2,1fr);
+}
+
+.trust{
+grid-template-columns:repeat(2,1fr);
+}
+
+.create-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.logo-section{
+position:static;
+transform:none;
+margin-right:auto;
+}
+
+.navbar{
+justify-content:space-between;
+}
+
+}
+
+@media(max-width:550px){
+
+.logo{
+width:62px;
+height:62px;
+font-size:38px;
+}
+
+.brand h1{
+font-size:28px;
+}
+
+.hero-content{
+margin-top:70px;
+}
+
+.hero-content h2{
+font-size:38px;
+}
+
+.script{
+font-size:52px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.create-grid,
+.service-grid,
+.feature-box,
+.trust{
+grid-template-columns:1fr;
+}
+
+.feature{
+border-right:none;
+border-bottom:1px solid rgba(216,168,79,.25);
+padding-bottom:20px;
+}
+
+.feature:last-child{
+border-bottom:none;
+}
+
+.section-title{
+font-size:34px;
+}
+
+.contact-btn{
+font-size:11px;
+padding:10px 14px;
+}
+
+}
+
+/* RANDOM LUXURY DECORATIONS */
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+/* TOP LEFT */
+
+.hero::before{
+content:"✦";
+position:absolute;
+top:90px;
+left:8%;
+font-size:22px;
+color:var(--gold);
+opacity:.7;
+animation:float1 4s ease-in-out infinite;
+}
+
+/* TOP RIGHT */
+
+.hero::after{
+content:"♡";
+position:absolute;
+top:160px;
+right:12%;
+font-size:28px;
+color:var(--gold);
+opacity:.6;
+animation:float2 5s ease-in-out infinite;
+}
+
+/* RANDOM HEART */
+
+.logo-section::before{
+content:"✨";
+position:absolute;
+left:-45px;
+top:10px;
+font-size:20px;
+color:var(--gold);
+opacity:.7;
+}
+
+/* RANDOM SPARKLE */
+
+.logo-section::after{
+content:"✧";
+position:absolute;
+right:-35px;
+bottom:8px;
+font-size:18px;
+color:var(--gold);
+opacity:.7;
+}
+
+/* HERO TITLE SPARKLE */
+
+.hero-content h2::before{
+content:"✦";
+position:absolute;
+left:-35px;
+top:15px;
+font-size:24px;
+color:var(--gold);
+opacity:.7;
+}
+
+.hero-content h2{
+position:relative;
+}
+
+/* CREATIVE TEXT HEART */
+
+.script::after{
+content:"♡";
+margin-left:12px;
+font-size:30px;
+color:var(--gold);
+opacity:.8;
+}
+
+/* RANDOM SMALL SPARKLE */
+
+.hero-content p::after{
+content:"✧";
+position:absolute;
+right:-20px;
+bottom:-10px;
+font-size:18px;
+color:var(--gold);
+opacity:.7;
+}
+
+.hero-content p{
+position:relative;
+}
+
+/* BUTTON DECOR */
+
+.main-btn::before{
+content:"✨";
+font-size:16px;
+}
+
+.main-btn::after{
+content:"♡";
+font-size:16px;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float1{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+}
+
+@keyframes float2{
+0%{transform:translateY(0px);}
+50%{transform:translateY(8px);}
+100%{transform:translateY(0px);}
+}
+
+/* WHAT WE CREATE HEARTS & SPARKLES */
+
+.create .section-title{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:18px;
+}
+
+.create .section-title::before{
+content:"♡";
+color:var(--gold);
+font-size:28px;
+opacity:.8;
+animation:float1 4s ease-in-out infinite;
+}
+
+.create .section-title::after{
+content:"✦";
+color:var(--gold);
+font-size:24px;
+opacity:.8;
+animation:float2 4s ease-in-out infinite;
+}
+
+/* EXTRA RANDOM SPARKLES */
+
+.create{
+position:relative;
+overflow:hidden;
+}
+
+.create::before{
+content:"✨";
+position:absolute;
+top:70px;
+left:8%;
+font-size:22px;
+color:var(--gold);
+opacity:.6;
+}
+
+.create::after{
+content:"♡";
+position:absolute;
+right:10%;
+bottom:50px;
+font-size:26px;
+color:var(--gold);
+opacity:.5;
+}
+
+/* LANGUAGE */
+.language-popup{
+position:fixed;
+inset:0;
+background:rgba(15,0,18,.92);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+}
+
+.language-box{
+background:linear-gradient(145deg,#260016,#12000d);
+border:1px solid var(--gold);
+border-radius:24px;
+padding:40px;
+text-align:center;
+max-width:420px;
+width:90%;
+box-shadow:0 0 35px rgba(216,168,79,.35);
+}
+
+.language-box h2{
+font-family:'Playfair Display',serif;
+color:#ffd98a;
+font-size:34px;
+margin-bottom:12px;
+}
+
+.language-box p{
+color:#fff0dc;
+font-size:15px;
+margin-bottom:28px;
+}
+
+.language-buttons{
+display:flex;
+gap:18px;
+justify-content:center;
+}
+
+.language-buttons button{
+border:1px solid var(--gold);
+background:linear-gradient(135deg,#efc46c,#9a6926);
+color:#240014;
+padding:13px 28px;
+border-radius:30px;
+font-weight:600;
+cursor:pointer;
+}
+
+.language-buttons button:hover{
+transform:translateY(-3px);
+}
+
+
+.lang-switch{
+position:fixed;
+bottom:22px;
+right:22px;
+z-index:999;
+display:flex;
+gap:8px;
+background:rgba(38,0,22,.75);
+border:1px solid rgba(216,168,79,.45);
+padding:8px;
+border-radius:30px;
+backdrop-filter:blur(8px);
+}
+
+.lang-switch button{
+border:none;
+background:linear-gradient(135deg,#efc46c,#9a6926);
+color:#220514;
+padding:9px 14px;
+border-radius:22px;
+font-weight:700;
+cursor:pointer;
+font-size:12px;
+}
+
+@media(max-width:550px){
+.lang-switch{
+bottom:14px;
+right:14px;
+}
+.lang-switch button{
+padding:8px 11px;
+font-size:11px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="language-popup" id="languagePopup">
+  <div class="language-box">
+    <h2 data-i18n="popupTitle">Choose Your Language</h2>
+    <p data-i18n="popupSub">உங்களுக்கு விருப்பமான மொழியை தேர்வு செய்யுங்கள்</p>
+    <div class="language-buttons">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('ta')">தமிழ்</button>
+    </div>
+  </div>
+</div>
+
+<div class="lang-switch">
+  <button onclick="setLanguage('en')">EN</button>
+  <button onclick="setLanguage('ta')">தமிழ்</button>
+</div>
+
+<section class="hero">
+<nav class="navbar">
+<div class="logo-section">
+<div class="logo">
+<img src="logo.jpeg" alt="Buttu Logo">
+</div>
+<div class="brand">
+<h1>Buttu's Creation</h1>
+<p data-i18n="brandTagline">MADE WITH L♡VE, JUST FOR YOU ♡</p>
+</div>
+</div>
+
+<a href="mailto:buttucreations@gmail.com" class="contact-btn">
+<i class="fa-solid fa-envelope"></i>
+<span data-i18n="contactText">CONTACT US</span>
+</a>
+</nav>
+
+<div class="hero-content">
+<h2>
+<span data-i18n="heroTitle">Crafting Tradition with Handmade</span>
+<span class="script" data-i18n="heroScript">Beauty ♡</span>
+</h2>
+
+<p data-i18n="heroSub">
+Expert in Mehandi, Aari, Beads & All Thread Works for Every Occasion
+</p>
+
+<div class="hero-features">
+<div class="hero-feature"><i class="fa-regular fa-circle-check"></i><span data-i18n="heroFeature1">Customized Designs</span></div>
+<div class="hero-feature"><i class="fa-regular fa-circle-check"></i><span data-i18n="heroFeature2">Affordable Prices</span></div>
+<div class="hero-feature"><i class="fa-regular fa-circle-check"></i><span data-i18n="heroFeature3">Premium Quality</span></div>
+<div class="hero-feature"><i class="fa-regular fa-circle-check"></i><span data-i18n="heroFeature4">Made with Love</span></div>
+</div>
+
+<a href="https://www.instagram.com/buttus_creation?igsh=MXoyejAwNDlobDB0" class="main-btn">
+<i class="fa-brands fa-instagram"></i>
+<span data-i18n="mainBtnText">LET'S CREATE YOUR STYLE</span>
+</a>
+</div>
+</section>
+
+<section class="create-section">
+<h2 class="create-title">
+<span class="line"></span>
+<span class="create-title-text" data-i18n="createTitle">What We Create</span>
+<span class="line"></span>
+</h2>
+<div class="title-heart">♡</div>
+
+<div class="create-grid">
+<div class="create-item">
+<div class="icon-circle">🤲</div>
+<h3 data-i18n="create1Title">MEHANDI<br>DESIGN</h3>
+<p data-i18n="create1Text">Beautiful & intricate<br>Mehandi designs for<br>all occasions</p>
+</div>
+
+<div class="create-item">
+<div class="icon-circle">🪡</div>
+<h3 data-i18n="create2Title">AARI<br>WORK</h3>
+<p data-i18n="create2Text">Elegant Aari embroidery<br>that adds a royal<br>touch</p>
+</div>
+
+<div class="create-item">
+<div class="icon-circle">🧵</div>
+<h3 data-i18n="create3Title">THREAD<br>WORKS</h3>
+<p data-i18n="create3Text">Neat & fine thread<br>work with perfect<br>finishing</p>
+</div>
+
+<div class="create-item">
+<div class="icon-circle">♡</div>
+<h3 data-i18n="create4Title">HANDMADE<br>JEWELRY</h3>
+<p data-i18n="create4Text">Unique handmade<br>jewelry to match<br>your style</p>
+</div>
+
+<div class="create-item">
+<div class="icon-circle">◉</div>
+<h3 data-i18n="create5Title">BEADS<br>BRACELETS</h3>
+<p data-i18n="create5Text">Trendy & custom<br>beaded bracelets<br>for every you</p>
+</div>
+
+<div class="create-item">
+<div class="icon-circle">💡</div>
+<h3 data-i18n="create6Title">CUSTOM<br>DESIGNS</h3>
+<p data-i18n="create6Text">Your ideas,<br>our creativity -<br>made just for you</p>
+</div>
+</div>
+</section>
+
+<section class="feature-box">
+<div class="feature">
+<i class="fa-regular fa-calendar-days"></i>
+<h4 data-i18n="box1Title">For All Occasions</h4>
+<p data-i18n="box1Text">Perfect for weddings, festivals, parties & more.</p>
+</div>
+<div class="feature">
+<i class="fa-regular fa-heart"></i>
+<h4 data-i18n="box2Title">Customized Just For You</h4>
+<p data-i18n="box2Text">We personalize every design as you dream.</p>
+</div>
+<div class="feature">
+<i class="fa-solid fa-award"></i>
+<h4 data-i18n="box3Title">Premium Quality</h4>
+<p data-i18n="box3Text">Finest materials with attention to detail.</p>
+</div>
+<div class="feature">
+<i class="fa-solid fa-wallet"></i>
+<h4 data-i18n="box4Title">Affordable Prices</h4>
+<p data-i18n="box4Text">Beautiful creations that fit your budget.</p>
+</div>
+</section>
+
+<section class="trust">
+<div><i class="fa-solid fa-award"></i><span data-i18n="trust1">100% HANDMADE</span></div>
+<div><i class="fa-regular fa-heart"></i><span data-i18n="trust2">MADE WITH LOVE</span></div>
+<div><i class="fa-solid fa-shield-halved"></i><span data-i18n="trust3">TRUSTED QUALITY</span></div>
+<div><i class="fa-solid fa-gift"></i><span data-i18n="trust4">SAFE PACKAGING</span></div>
+</section>
+
+<section class="services">
+<h2 class="section-title" data-i18n="servicesTitle">Our Services</h2>
+<p class="scroll-hint" id="scrollHint">சேவைகளை அறிய ஸ்வைப் செய்யவும்.</p>
+<div class="service-wrapper">
+<div class="service-grid" id="serviceGrid">
+
+<div class="service-card">
+<img src="aari.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="aariTag">👑 Luxury Designs</span>
+<h3 data-i18n="aariTitle">AARI WORKS</h3>
+<p class="highlight-text" data-i18n="aariText">Simple • Grand • Bridal Blouses</p>
+<div class="service-features">
+<span data-i18n="aariF1">✦ Handmade</span><span data-i18n="aariF2">♡ Premium</span><span data-i18n="aariF3">✧ Custom</span>
+</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="mehndi.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="mehndiTag">✨ Bridal Favorite</span>
+<h3 data-i18n="mehndiTitle">MEHANDI DESIGNS</h3>
+<p class="highlight-text" data-i18n="mehndiText">Arabic • Bridal • Custom Patterns</p>
+<div class="service-features">
+<span data-i18n="mehndiF1">♡ Elegant</span><span data-i18n="mehndiF2">✦ Trendy</span><span data-i18n="mehndiF3">✧ Detailed</span>
+</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="bangles.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="banglesTag">💫 Festive Collection</span>
+<h3 data-i18n="banglesTitle">THREAD BANGLES</h3>
+<p class="highlight-text" data-i18n="banglesText">Matching Sets • Silk Thread • Bridal Wear</p>
+<div class="service-features">
+<span data-i18n="banglesF1">♡ Colorful</span><span data-i18n="banglesF2">✦ Elegant</span><span data-i18n="banglesF3">✧ Stylish</span>
+</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="bracelet.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="braceletTag">🦋 Trending Now</span>
+<h3 data-i18n="braceletTitle">BEADS BRACELETS</h3>
+<p class="highlight-text" data-i18n="braceletText">Customized • Charm Style • Modern Look</p>
+<div class="service-features">
+<span data-i18n="braceletF1">♡ Cute</span><span data-i18n="braceletF2">✦ Trendy</span><span data-i18n="braceletF3">✧ Premium</span>
+</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="bridal.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="bridalTag">💍 Wedding Special</span>
+<h3 data-i18n="bridalTitle">BRIDAL MEHANDI</h3>
+<p class="highlight-text" data-i18n="bridalText">Full Hand • Bridal Style • Rich Detailing</p>
+<div class="service-features">
+<span data-i18n="bridalF1">✦ Royal</span><span data-i18n="bridalF2">♡ Bridal</span><span data-i18n="bridalF3">✧ Grand</span>
+</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="necklace.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="necklaceTag">✨ Ethnic Collection</span>
+<h3 data-i18n="necklaceTitle">SILK THREAD NECKLACES</h3>
+<p class="highlight-text" data-i18n="necklaceText">Traditional • Festive • Handmade Jewelry</p>
+<div class="service-features">
+<span data-i18n="necklaceF1">♡ Unique</span><span data-i18n="necklaceF2">✦ Elegant</span><span data-i18n="necklaceF3">✧ Stylish</span>
+</div>
+</div>
+</div>
+
+<div class="service-card">
+<img src="earrings.jpg">
+<div class="service-content">
+<span class="mini-tag" data-i18n="earringsTag">🌸 Best Seller</span>
+<h3 data-i18n="earringsTitle">SILK THREAD EARRINGS</h3>
+<p class="highlight-text" data-i18n="earringsText">Lightweight • Traditional • Modern Designs</p>
+<div class="service-features">
+<span data-i18n="earringsF1">♡ Cute</span><span data-i18n="earringsF2">✦ Premium</span><span data-i18n="earringsF3">✧ Handmade</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<h2 data-i18n="footerTitle">Buttu's Creation</h2>
+<p data-i18n="footerText">Handmade Jewelry • Aari Works • Mehandi • Thread Works • Custom Designs</p>
+<a href="https://www.instagram.com/buttus_creation?igsh=MXoyejAwNDlobDB0" class="footer-btn">
+<i class="fa-brands fa-instagram"></i>
+<span data-i18n="footerBtn">FOLLOW ON INSTAGRAM</span>
+</a>
+<div class="footer-bottom" data-i18n="copyright">© 2026 Buttu's Creation • All Rights Reserved</div>
+</footer>
+
+<script>
+lucide.createIcons();
+</script>
+
+
+<script>
+const textData = {
+  "en": {
+    "popupTitle": "Choose Your Language",
+    "popupSub": "உங்களுக்கு விருப்பமான மொழியை தேர்வு செய்யுங்கள்",
+    "brandTagline": "MADE WITH L♡VE, JUST FOR YOU ♡",
+    "contactText": "CONTACT US",
+    "heroTitle": "Crafting Tradition with Handmade",
+    "heroScript": "Beauty ♡",
+    "heroSub": "Expert in Mehandi, Aari, Beads & All Thread Works for Every Occasion",
+    "heroFeature1": "Customized Designs",
+    "heroFeature2": "Affordable Prices",
+    "heroFeature3": "Premium Quality",
+    "heroFeature4": "Made with Love",
+    "mainBtnText": "LET'S CREATE YOUR STYLE",
+    "createTitle": "What We Create",
+    "create1Title": "MEHANDI<br>DESIGN",
+    "create1Text": "Beautiful & intricate<br>Mehandi designs for<br>all occasions",
+    "create2Title": "AARI<br>WORK",
+    "create2Text": "Elegant Aari embroidery<br>that adds a royal<br>touch",
+    "create3Title": "THREAD<br>WORKS",
+    "create3Text": "Neat & fine thread<br>work with perfect<br>finishing",
+    "create4Title": "HANDMADE<br>JEWELRY",
+    "create4Text": "Unique handmade<br>jewelry to match<br>your style",
+    "create5Title": "BEADS<br>BRACELETS",
+    "create5Text": "Trendy & custom<br>beaded bracelets<br>for every you",
+    "create6Title": "CUSTOM<br>DESIGNS",
+    "create6Text": "Your ideas,<br>our creativity -<br>made just for you",
+    "box1Title": "For All Occasions",
+    "box1Text": "Perfect for weddings, festivals, parties & more.",
+    "box2Title": "Customized Just For You",
+    "box2Text": "We personalize every design as you dream.",
+    "box3Title": "Premium Quality",
+    "box3Text": "Finest materials with attention to detail.",
+    "box4Title": "Affordable Prices",
+    "box4Text": "Beautiful creations that fit your budget.",
+    "trust1": "100% HANDMADE",
+    "trust2": "MADE WITH LOVE",
+    "trust3": "TRUSTED QUALITY",
+    "trust4": "SAFE PACKAGING",
+    "servicesTitle": "Our Services",
+    "scrollHint": "Touch to pause • Scroll to explore more",
+    "aariTag": "👑 Luxury Designs",
+    "aariTitle": "AARI WORKS",
+    "aariText": "Simple • Grand • Bridal Blouses",
+    "aariF1": "✦ Handmade",
+    "aariF2": "♡ Premium",
+    "aariF3": "✧ Custom",
+    "mehndiTag": "✨ Bridal Favorite",
+    "mehndiTitle": "MEHANDI DESIGNS",
+    "mehndiText": "Arabic • Bridal • Custom Patterns",
+    "mehndiF1": "♡ Elegant",
+    "mehndiF2": "✦ Trendy",
+    "mehndiF3": "✧ Detailed",
+    "banglesTag": "💫 Festive Collection",
+    "banglesTitle": "THREAD BANGLES",
+    "banglesText": "Matching Sets • Silk Thread • Bridal Wear",
+    "banglesF1": "♡ Colorful",
+    "banglesF2": "✦ Elegant",
+    "banglesF3": "✧ Stylish",
+    "braceletTag": "🦋 Trending Now",
+    "braceletTitle": "BEADS BRACELETS",
+    "braceletText": "Customized • Charm Style • Modern Look",
+    "braceletF1": "♡ Cute",
+    "braceletF2": "✦ Trendy",
+    "braceletF3": "✧ Premium",
+    "bridalTag": "💍 Wedding Special",
+    "bridalTitle": "BRIDAL MEHANDI",
+    "bridalText": "Full Hand • Bridal Style • Rich Detailing",
+    "bridalF1": "✦ Royal",
+    "bridalF2": "♡ Bridal",
+    "bridalF3": "✧ Grand",
+    "necklaceTag": "✨ Ethnic Collection",
+    "necklaceTitle": "SILK THREAD NECKLACES",
+    "necklaceText": "Traditional • Festive • Handmade Jewelry",
+    "necklaceF1": "♡ Unique",
+    "necklaceF2": "✦ Elegant",
+    "necklaceF3": "✧ Stylish",
+    "earringsTag": "🌸 Best Seller",
+    "earringsTitle": "SILK THREAD EARRINGS",
+    "earringsText": "Lightweight • Traditional • Modern Designs",
+    "earringsF1": "♡ Cute",
+    "earringsF2": "✦ Premium",
+    "earringsF3": "✧ Handmade",
+    "footerTitle": "Buttu's Creation",
+    "footerText": "Handmade Jewelry • Aari Works • Mehandi • Thread Works • Custom Designs",
+    "footerBtn": "FOLLOW ON INSTAGRAM",
+    "copyright": "© 2026 Buttu's Creation • All Rights Reserved"
+  },
+  "ta": {
+    "popupTitle": "மொழியை தேர்வு செய்யுங்கள்",
+    "popupSub": "உங்களுக்கு விருப்பமான மொழியை தேர்வு செய்யுங்கள்",
+    "brandTagline": "அன்புடன் கைவினையாக, உங்களுக்காக ♡",
+    "contactText": "தொடர்பு கொள்ள",
+    "heroTitle": "கைவினை அழகுடன் பாரம்பரியம்",
+    "heroScript": "உங்கள் சிறப்பு தருணங்களுக்கு ♡",
+    "heroSub": "மெஹந்தி, ஆரி வேலை, பீட்ஸ் மற்றும் அனைத்து த்ரெட் வேலைகளுக்கும் சிறந்த சேவை",
+    "heroFeature1": "கஸ்டமைஸ் டிசைன்ஸ்",
+    "heroFeature2": "அனைவருக்கும் ஏற்ற விலை",
+    "heroFeature3": "பிரீமியம் தரம்",
+    "heroFeature4": "அன்புடன் தயாரிப்பு",
+    "mainBtnText": "உங்கள் ஸ்டைலை உருவாக்கலாம்",
+    "createTitle": "நாங்கள் உருவாக்குவது",
+    "create1Title": "மெஹந்தி<br>டிசைன்",
+    "create1Text": "அரபிக், பிரைடல்<br>மற்றும் கஸ்டம்<br>மெஹந்தி டிசைன்ஸ்",
+    "create2Title": "ஆரி<br>வேலை",
+    "create2Text": "சிம்பிள் முதல்<br>பிரைடல் வரை<br>ஆரி ப்ளவுஸ் வேலை",
+    "create3Title": "த்ரெட்<br>வேலைகள்",
+    "create3Text": "சில்க் த்ரெட்<br>பேங்கிள்ஸ் மற்றும்<br>ஜுவல்லரி வேலைகள்",
+    "create4Title": "ஹேண்ட்மேட்<br>ஜுவல்லரி",
+    "create4Text": "உங்கள் ஸ்டைலுக்கு<br>ஏற்ற தனித்துவமான<br>கைவினை ஜுவல்லரி",
+    "create5Title": "பீட்ஸ்<br>பிரேஸ்லெட்ஸ்",
+    "create5Text": "கஸ்டம் நிறங்கள்<br>மற்றும் சார்ம் ஸ்டைல்<br>பீட்ஸ் பிரேஸ்லெட்ஸ்",
+    "create6Title": "கஸ்டம்<br>டிசைன்ஸ்",
+    "create6Text": "உங்கள் ஐடியாவை<br>அழகான கைவினையாக<br>மாற்றுகிறோம்",
+    "box1Title": "எல்லா நிகழ்ச்சிகளுக்கும்",
+    "box1Text": "திருமணம், விழா, பார்ட்டி எல்லாவற்றிற்கும் பொருத்தமானது.",
+    "box2Title": "உங்களுக்கேற்ற கஸ்டமைஸ்",
+    "box2Text": "உங்கள் விருப்பத்திற்கு ஏற்றபடி ஒவ்வொரு டிசைனும் செய்யப்படும்.",
+    "box3Title": "பிரீமியம் தரம்",
+    "box3Text": "நல்ல பொருட்கள் மற்றும் அழகான finishing உடன்.",
+    "box4Title": "ஏற்ற விலை",
+    "box4Text": "உங்கள் பட்ஜெட்டுக்குள் அழகான கைவினை பொருட்கள்.",
+    "trust1": "100% கைவினை",
+    "trust2": "அன்புடன் தயாரிப்பு",
+    "trust3": "நம்பகமான தரம்",
+    "trust4": "பாதுகாப்பான பேக்கிங்",
+    "servicesTitle": "எங்கள் சேவைகள்",
+    "scrollHint": "தொடும்போது நிற்கும் • மேலும் பார்க்க ஸ்க்ரோல் செய்யுங்கள்",
+    "aariTag": "👑 லக்ஷுரி டிசைன்ஸ்",
+    "aariTitle": "ஆரி வேலை",
+    "aariText": "சிம்பிள் • கிராண்ட் • பிரைடல் ப்ளவுஸ்",
+    "aariF1": "✦ கைவினை",
+    "aariF2": "♡ பிரீமியம்",
+    "aariF3": "✧ கஸ்டம்",
+    "mehndiTag": "✨ பிரைடல் ஃபேவரைட்",
+    "mehndiTitle": "மெஹந்தி டிசைன்ஸ்",
+    "mehndiText": "அரபிக் • பிரைடல் • கஸ்டம் பேட்டர்ன்ஸ்",
+    "mehndiF1": "♡ எலிகன்ட்",
+    "mehndiF2": "✦ ட்ரெண்டி",
+    "mehndiF3": "✧ டீட்டெய்லிங்",
+    "banglesTag": "💫 விழா கலெக்ஷன்",
+    "banglesTitle": "த்ரெட் பேங்கிள்ஸ்",
+    "banglesText": "மேட்சிங் செட்ஸ் • சில்க் த்ரெட் • பிரைடல் வேர்",
+    "banglesF1": "♡ கலர்ஃபுல்",
+    "banglesF2": "✦ எலிகன்ட்",
+    "banglesF3": "✧ ஸ்டைலிஷ்",
+    "braceletTag": "🦋 ட்ரெண்டிங் நவ்",
+    "braceletTitle": "பீட்ஸ் பிரேஸ்லெட்ஸ்",
+    "braceletText": "கஸ்டமைஸ் • சார்ம் ஸ்டைல் • மாடர்ன் லுக்",
+    "braceletF1": "♡ க்யூட்",
+    "braceletF2": "✦ ட்ரெண்டி",
+    "braceletF3": "✧ பிரீமியம்",
+    "bridalTag": "💍 வெட்டிங் ஸ்பெஷல்",
+    "bridalTitle": "பிரைடல் மெஹந்தி",
+    "bridalText": "ஃபுல் ஹேண்ட் • பிரைடல் ஸ்டைல் • ரிச் டீட்டெய்லிங்",
+    "bridalF1": "✦ ராயல்",
+    "bridalF2": "♡ பிரைடல்",
+    "bridalF3": "✧ கிராண்ட்",
+    "necklaceTag": "✨ எத்த்னிக் கலெக்ஷன்",
+    "necklaceTitle": "சில்க் த்ரெட் நெக்லஸ்",
+    "necklaceText": "டிரடிஷனல் • ஃபெஸ்டிவ் • ஹேண்ட்மேட் ஜுவல்லரி",
+    "necklaceF1": "♡ யூனிக்",
+    "necklaceF2": "✦ எலிகன்ட்",
+    "necklaceF3": "✧ ஸ்டைலிஷ்",
+    "earringsTag": "🌸 பெஸ்ட் செல்லர்",
+    "earringsTitle": "சில்க் த்ரெட் இயர்ரிங்ஸ்",
+    "earringsText": "லைட்வெயிட் • டிரடிஷனல் • மாடர்ன் டிசைன்ஸ்",
+    "earringsF1": "♡ க்யூட்",
+    "earringsF2": "✦ பிரீமியம்",
+    "earringsF3": "✧ கைவினை",
+    "footerTitle": "Buttu's Creation",
+    "footerText": "ஹேண்ட்மேட் ஜுவல்லரி • ஆரி வேலை • மெஹந்தி • த்ரெட் வேலை • கஸ்டம் டிசைன்ஸ்",
+    "footerBtn": "INSTAGRAM-ல் FOLLOW செய்யுங்கள்",
+    "copyright": "© 2026 Buttu's Creation • அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை"
+  }
+};
+
+function applyLanguage(lang){
+  document.documentElement.lang = lang === "ta" ? "ta" : "en";
+  document.querySelectorAll("[data-i18n]").forEach(function(element){
+    const key = element.getAttribute("data-i18n");
+    if(textData[lang] && textData[lang][key] !== undefined){
+      element.innerHTML = textData[lang][key];
+    }
+  });
+}
+
+function setLanguage(lang){
+  document.getElementById("languagePopup").style.display = "none";
+  applyLanguage(lang);
+}
+
+window.addEventListener("load", function(){
+  document.getElementById("languagePopup").style.display = "flex";
+  applyLanguage("en");
+});
+</script>
+
+</body>
+</html>
