@@ -126,6 +126,31 @@ background:rgba(255,255,255,.03);
 backdrop-filter:blur(8px);
 }
 
+.header-actions{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.whatsapp-btn{
+border-color:#d8a84f;
+}
+
+.whatsapp-btn i{
+font-size:16px;
+}
+
+@media(max-width:550px){
+.header-actions{
+gap:8px;
+}
+
+.contact-btn{
+font-size:10px;
+padding:9px 10px;
+}
+}
+
 .contact-btn:hover{
 background:var(--gold);
 color:#1d0515;
@@ -1063,10 +1088,15 @@ font-size:11px;
 </div>
 </div>
 
-<a href="mailto:buttucreations@gmail.com" class="contact-btn">
-<i class="fa-solid fa-envelope"></i>
-<span data-i18n="contactText">CONTACT US</span>
+<div class="header-actions">
+
+<a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="contact-btn whatsapp-btn">
+<i class="fa-brands fa-whatsapp"></i>
+<span data-i18n="whatsappText">CONTACT US</span>
 </a>
+
+</div>
+
 </nav>
 
 <div class="hero-content">
@@ -1369,6 +1399,7 @@ const textData = {
     "footerTitle": "Buttu's Creation",
     "footerText": "Handmade Jewelry • Aari Works • Mehandi • Thread Works • Custom Designs",
     "footerBtn": "FOLLOW ON INSTAGRAM",
+    "whatsappText": "WHATSAPP",
     "copyright": "© 2026 Buttu's Creation • All Rights Reserved"
   },
   "ta": {
@@ -1457,6 +1488,7 @@ const textData = {
     "footerTitle": "Buttu's Creation",
     "footerText": "ஹேண்ட்மேட் ஜுவல்லரி • ஆரி வேலை • மெஹந்தி • த்ரெட் வேலை • கஸ்டம் டிசைன்ஸ்",
     "footerBtn": "INSTAGRAM-ல் FOLLOW செய்யுங்கள்",
+    "whatsappText": "வாட்ஸ்அப்",
     "copyright": "© 2026 Buttu's Creation • அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை"
   }
 };
